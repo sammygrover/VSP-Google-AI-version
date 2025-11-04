@@ -52,3 +52,49 @@ export interface EpaEvaluationResult {
   entrustabilityScore: number;
   feedback: string;
 }
+
+export interface PsychiatricEvaluationResult {
+  historyOfPresentIllness: EvaluationSection;
+  pastPsychiatricHistory: EvaluationSection;
+  mentalStatusExamination: EvaluationSection;
+  rapportAndEmpathy: EvaluationSection;
+  patientFeedback: string;
+  overallImpression: string;
+}
+
+export interface SpikesEvaluationResult {
+  setting: EvaluationSection;
+  perception: EvaluationSection;
+  invitation: EvaluationSection;
+  knowledge: EvaluationSection;
+  emotions: EvaluationSection;
+  strategyAndSummary: EvaluationSection;
+  patientFeedback: string;
+  overallImpression: string;
+}
+
+export interface GeriatricEvaluationResult {
+  fallsHistory: EvaluationSection;
+  functionalAssessment: EvaluationSection;
+  medicationReview: EvaluationSection;
+  sensoryAndCommunication: EvaluationSection;
+  patientFeedback: string;
+  overallImpression: string;
+}
+
+export interface NonVerbalEvaluationResult {
+    attentiveGaze: EvaluationSection;
+    facialExpression: EvaluationSection;
+    postureAndGestures: EvaluationSection;
+    vocalCues: EvaluationSection;
+    overallImpression: string;
+}
+
+export interface EmergencyEvaluationResult {
+    rapidIdentification: EvaluationSection;
+    focusedHistory: EvaluationSection;
+    activationOfResponse: EvaluationSection;
+    communicationUnderPressure: EvaluationSection;
+    patientFeedback: string;
+    overallImpression: string;
+}
