@@ -1,0 +1,7 @@
+{
+  "name": "Virtual Standardized Patient",
+  "description": "An AI-powered application for medical education that allows students to practice patient interviews. It features voice-based interaction with a virtual patient, real-time transcription, and automated performance evaluation based on a rubric.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
